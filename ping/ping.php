@@ -32,7 +32,7 @@ if (!isset($argv[1])) {
  * Executing
  */
 if (($exec = shell_exec('ping -c3 -q '.escapeshellarg($argv[1]).'|grep avg')) === null) {
-	die("Error: unable to ping ".$argv[1]);
+	die("Error: unable to ping ".$argv[1]."\n");
 }
 
 /*

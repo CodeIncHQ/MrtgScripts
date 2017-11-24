@@ -8,7 +8,7 @@ The TX and RX bytes are read from `/sys/class/net/*interface*/statistics/rx_byte
 ## MRTG Configuration
 ```
 #----------------Network etho---------------
-Target[net_eth0]: `/etc/mrtg/network.php eth0`;
+Target[net_eth0]: `/etc/mrtg/network.php 'eth0'`;
 Options[net_eth0]: nopercent,growright,nobanner,noinfo
 MaxBytes[net_eth0]: 2000000
 AbsMax[net_eth0]: 10000000

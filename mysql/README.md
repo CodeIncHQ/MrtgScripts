@@ -1,6 +1,8 @@
 # MySQL / MariaDB monitoring script
 
-The script is using [`PDO`](http://php.net/manual/fr/book.pdo.php) to monitor a MySQL or a MarieDB server. Two script are defined to monitor queries and bandwidth. Both the two scripts can take two optionnal arguments: a username and a password. 
+The script is using [`PDO`](http://php.net/manual/fr/book.pdo.php) to monitor a MySQL or a MarieDB server. Two script are defined to monitor queries and bandwidth. Both the two scripts can take two optionnal arguments: a username and a password.
+
+The required rights for the monitoring user are: `SELECT`, `REPLICATION CLIENT` , `SHOW DATABASES`, `SUPER`, `PROCESS` 
 
 ## MRTG Configuration for queries monitoring
 ```
