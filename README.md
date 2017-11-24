@@ -19,8 +19,8 @@ Legend1[ping_ovh]: Max latency (ms)
 Legend2[ping_ovh]: Min latency (ms)
 LegendI[ping_ovh]: Max latency:
 LegendO[ping_ovh]: Min latency:
-Title[ping_ovh]: Ping sur ping.ovh.net
-PageTop[ping_ovh]: <h1>Ping OVH</h1>
+Title[ping_ovh]: Pinging ping.ovh.net
+PageTop[ping_ovh]: <h1>Pinging OVH</h1>
 WithPeak[ping_ovh]:wmy
 Legend4[ping_ovh]: Min latency maximum
 Legend3[ping_ovh]: Max latency maximum
@@ -40,10 +40,33 @@ Legend1[ping_google]: Max latency (ms)
 Legend2[ping_google]: Min latency (ms)
 LegendI[ping_google]: Max latency:
 LegendO[ping_google]: Min latency:
-Title[ping_google]: Ping sur www.google.com
-PageTop[ping_google]: <h1>Ping Google</h1>
+Title[ping_google]: Pinging www.google.com
+PageTop[ping_google]: <h1>Pinging Google</h1>
 WithPeak[ping_google]:wmy
 Legend4[ping_google]: Min latency maximum
 Legend3[ping_google]: Max latency maximum
 #--------end ping-----------------------------
+```
+
+### Memory
+
+```
+#---------Memory--------------------
+Target[mem]: `/etc/mrtg/mem`
+Options[mem]: nopercent,growright,gauge,noinfo, nobanner
+Unscaled[mem]:dwmy
+MaxBytes[mem]: 261025792
+Kilo[mem]:1024
+YLegend[mem]: RAM
+ShortLegend[mem]: o
+Legend1[mem]: Free memory
+Legend2[mem]: Used memory
+LegendI[mem]: Free memory:
+LegendO[mem]: Used memory:
+Title[mem]: Memory
+PageTop[mem]: <h1>Memory</h1>
+WithPeak[mem]:wmy
+Legend3[mem]: Mémoire libre max
+Legend4[mem]: Mémoire utilisée max
+#--------end Memory-----------------------------
 ```
