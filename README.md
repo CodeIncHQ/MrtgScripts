@@ -1,6 +1,6 @@
 # MRTG scripts
 
-This repository is dedicated to store Code Inc.'s various [MRTG](https://www.mrtg.com/) scripts. 
+This repository is dedicated to store [Code Inc.](https://www.codeinc.fr/)'s various [MRTG](https://www.mrtg.com/) scripts. 
 
 ## Scripts list
 
