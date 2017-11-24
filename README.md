@@ -6,6 +6,7 @@ This repository is dedicated to store [Code Inc.](https://www.codeinc.fr/)'s var
  
 * [CPU monitoring script](https://github.com/codeincfr/mrtg-scripts/tree/master/cpu) 
 * [Memory monitoring script](https://github.com/codeincfr/mrtg-scripts/tree/master/memory)
+* [MySQL / MariaDB monitoring script](https://github.com/codeincfr/mrtg-scripts/tree/master/mysql)
 * [Network monitoring script](https://github.com/codeincfr/mrtg-scripts/tree/master/network)
 * [Nginx monitoring script](https://github.com/codeincfr/mrtg-scripts/tree/master/nginx)
 * [Ping monitoring script](https://github.com/codeincfr/mrtg-scripts/tree/master/ping)
