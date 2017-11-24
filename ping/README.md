@@ -3,6 +3,8 @@
 The host name to ping must be passed to the script as the first argument :
 `ping.php 'www.google.com'` 
 
+The ping is done via `ping -c3 -q *hostname*`.
+
 ## MRTG Configuration
 ```
 #---------Ping OVH--------------------

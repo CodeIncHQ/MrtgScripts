@@ -25,10 +25,10 @@
  * Cheking
  */
 if (!isset($argv[1])) {
-	die("Error: the network interface is missing as an argument");
+	die("Error: the network interface is missing as an argument\n");
 }
 if (preg_match('/^a-z0-9$/ui', $argv[1])) {
-	die("Error: the network interface name \"".$argv[1]."\" is invalid");
+	die("Error: the network interface name \"".$argv[1]."\" is invalid\n");
 }
 
 /*
@@ -42,6 +42,6 @@ function getNetworkInterfaceInfo(string $interface, string $entry):int {
 }
 $rxStart = getNetworkInterfaceInfo($argv[1], "rx_bytes");
 $txStart = getNetworkInterfaceInfo($argv[1], "tx_bytes");
-sleep(1);
-echo (getNetworkInterfaceInfo($argv[1], "rx_bytes") - $rxStart)."\n"
-	.(getNetworkInterfaceInfo($argv[1], "tx_bytes") - $txStart)."\n";
+sleep(10);
+echo round((getNetworkInterfaceInfo($argv[1], "rx_bytes") - $rxStart) / 10)."\n"
+	.round((getNetworkInterfaceInfo($argv[1], "tx_bytes") - $txStart) / 10)."\n";

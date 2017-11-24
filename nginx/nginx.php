@@ -25,25 +25,25 @@
  * Cheking
  */
 if (!isset($argv[1])) {
-	die("Error: the NGinx status URL is missing as an argument");
+	die("Error: the NGinx status URL is missing as an argument\n");
 }
 if (!filter_var($argv[1], FILTER_VALIDATE_URL)) {
-	die("Error: the NGinx status URL is invalid");
+	die("Error: the NGinx status URL is invalid\n");
 }
 
 /*
- * Reading
+ * Reading and parsing active connections
  */
 if (($status = file_get_contents($argv[1])) === false) {
 	die("Error: unable to read the Nginx status from: ".$argv[1]."\n");
 }
-
-/*
- * Parsing
- */
-if (preg_match("/Active connections:\\s+([0-9]+)/ui", $status, $matches)) {
-	echo $matches[1]."\n";
+if (preg_match("/Active connections:\\s+([0-9]+)/ui", $status, $matches) && preg_match("/Waiting:\\s+([0-9]+)/ui", $status, $matches2)) {
+	$activeConnections = (int)$matches[1];
+	$waitingConnections = (int)$matches2[1];
 }
 else {
 	die("Error: unable to parse the Nginx status\n");
 }
+
+echo "$activeConnections\n"
+	."$waitingConnections\n";

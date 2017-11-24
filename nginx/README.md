@@ -1,7 +1,9 @@
 # Nginx monitoring script
 
 The NGinx status URL must be passed to the script as the first argument :
-`nginx.php 'http://127.0.0.1/nginx_status'` 
+`nginx.php 'http://127.0.0.1/nginx_status'`
+
+The status is read via an HTTP query to a [Nginx status page](http://nginx.org/en/docs/http/ngx_http_stub_status_module.html).
 
 ## MRTG Configuration
 ```

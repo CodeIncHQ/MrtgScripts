@@ -3,6 +3,8 @@
 The network interface named must to be passed to the script as the first argument :
 `network.php eth0`
 
+The TX and RX bytes are read from `/sys/class/net/*interface*/statistics/rx_bytes` and `/sys/class/net/*interface*/statistics/tx_bytes`.
+
 ## MRTG Configuration
 ```
 #----------------Network etho---------------

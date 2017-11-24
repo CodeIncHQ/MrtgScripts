@@ -1,5 +1,7 @@
 # Memory monitoring script
 
+The script is using `free -b` to read the memory usage.
+
 ## MRTG Configuration
 ```
 #---------Memory--------------------

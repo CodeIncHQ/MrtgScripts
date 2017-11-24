@@ -1,6 +1,7 @@
 # CPU monitoring script
 
-This script is using code from [this page](https://stackoverflow.com/questions/13131003/get-cpu-percent-usage-in-php).
+The CPU usage is read using `mpstat`. This program is part of the `sysstat` package which can be installed running:
+`apt-get install sysstat`
 
 ## MRTG Configuration
 ```
