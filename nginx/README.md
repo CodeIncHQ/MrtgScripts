@@ -7,7 +7,7 @@ The NGinx status URL must be passed to the script as the first argument :
 ```
 #---------Nginx-------------------
 Target[nginx]: `/etc/mrtg/nginx.php 'http://127.0.0.1/nginx_status'`
-Options[nginx]: nopercent,growright,gauge,noinfo, nobanner
+Options[nginx]: nopercent,growright,gauge,noinfo,nobanner
 MaxBytes[nginx]: 10000000
 YLegend[nginx]: Active connections
 ShortLegend[nginx]: Active connections

@@ -6,7 +6,7 @@ This script is using code from [this page](https://stackoverflow.com/questions/1
 ```
 #---------CPU-------------------
 Target[cpu]: `/etc/mrtg/cpu.php`
-Options[cpu]: nopercent,growright,gauge,noinfo, nobanner
+Options[cpu]: nopercent,growright,gauge,noinfo,nobanner
 #Unscaled[cpu]:dwmy
 MaxBytes[cpu]: 100
 YLegend[cpu]: % CPU

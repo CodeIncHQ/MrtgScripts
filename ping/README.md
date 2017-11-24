@@ -7,7 +7,7 @@ The host name to ping must be passed to the script as the first argument :
 ```
 #---------Ping OVH--------------------
 Target[ping_ovh]: `/etc/mrtg/ping.php 'ping.ovh.net'`
-Options[ping_ovh]: nopercent,growright,gauge,noinfo, nobanner
+Options[ping_ovh]: nopercent,growright,gauge,noinfo,nobanner
 MaxBytes[ping_ovh]: 10000
 AbsMax[ping_ovh]: 10000
 YLegend[ping_ovh]: Latency
