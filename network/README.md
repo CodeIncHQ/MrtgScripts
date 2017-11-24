@@ -5,7 +5,7 @@ The network interface named must to be passed to the script as the first argumen
 
 ## MRTG Configuration
 ```
-#----------------Network ETHO---------------
+#----------------Network etho---------------
 Target[net_eth0]: `/etc/mrtg/network.php eth0`;
 Options[net_eth0]: dorelpercent, growright, nobanner, noinfo, transparent
 MaxBytes[net_eth0]: 2000000
